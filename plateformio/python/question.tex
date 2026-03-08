@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{center}
+\Large \textbf{PlatformIO Question}
+
+\vspace{0.3cm}
+
+\textbf{Anushree M R} \\
+COMETFWC063
+\end{center}
+
+\section*{Question:42}
+
+The logic gate circuit shown below realizes the function \(Z\).
+
+\begin{center}
+\includegraphics[width=10cm]{question.jpg}
+\end{center}
+
+Possible outputs are:
+
+\begin{itemize}
+\item XOR
+\item XNOR
+\item Half Adder
+\item Full Adder
+\end{itemize}
+
+\section*{Solution}
+
+From the circuit, NAND gates are used to construct the logic.
+
+The output simplifies to:
+
+\[
+Z = X \oplus Y
+\]
+
+Thus the circuit implements the \textbf{XOR function}.
+
+\section*{Truth Table}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+X & Y & Z (XOR) \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section*{Graph Output}
+\begin{center}
+\includegraphics[width=10cm]{graph.jpg}
+\end{center}
+
+\section*{Conclusion}
+
+From the analysis of the given logic circuit and its truth table, the output is high only when the inputs \(X\) and \(Y\) are different. This corresponds to the behavior of an XOR gate.
+
+Hence, the correct option is \textbf{(a) XOR}.
+
+\end{document}
+
