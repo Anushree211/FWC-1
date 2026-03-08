@@ -1,0 +1,127 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{iiitb_comet_logo.jpg}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+{\Large \textbf{Anushree M R}}\\
+ID: COMETFWC063
+\end{center}
+
+\vspace{1cm}
+
+\section*{GATE CS 2010 Question}
+
+\textbf{Question:31}
+
+What is the Boolean expression for the output $f$ of the combinational logic circuit of NOR gates shown below?
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{IMG_20260307_203826.jpg}
+\end{center}
+
+\textbf{Options}
+
+\begin{itemize}
+\item (a) $\overline{Q+R}$
+\item (b) $\overline{P+Q}$
+\item (c) $\overline{P+R}$
+\item (d) $\overline{P+Q+R}$
+\end{itemize}
+
+\section*{Question Analysis}
+
+A NOR gate performs the operation
+
+\[
+NOR(A,B)=\overline{A+B}
+\]
+
+After simplifying the given circuit we obtain
+
+\[
+f = \overline{P+Q}
+\]
+
+\section*{Truth Table}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+P & Q & f \\
+\hline
+0 & 0 & 1 \\
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+1 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section*{Required Components}
+
+\begin{itemize}
+\item Arduino UNO
+\item IC 7447
+\item Common Anode 7 Segment Display
+\item Breadboard
+\item Resistors
+\item Jumper wires
+\end{itemize}
+
+\section*{Hardware Implementation}
+
+The simplified logic expression is
+
+\[
+f = \overline{P+Q}
+\]
+
+\subsection*{Arduino Connections}
+
+\begin{itemize}
+\item Pin 10 $\rightarrow$ Input P
+\item Pin 11 $\rightarrow$ Input Q
+\item Pin 9 $\rightarrow$ Output f
+\end{itemize}
+
+\subsection*{IC 7447 Connections}
+
+\begin{itemize}
+\item Pin 16 $\rightarrow$ 5V
+\item Pin 8 $\rightarrow$ GND
+\item Pin 3,4,5 $\rightarrow$ 5V
+\item Pin 1,2,6 $\rightarrow$ GND
+\item Pin 7 $\rightarrow$ Arduino Pin 9
+\end{itemize}
+
+\subsection*{7 Segment Display}
+
+\begin{itemize}
+\item Common Anode pins $\rightarrow$ 5V
+\item Segment outputs connected through resistors
+\end{itemize}
+
+\section*{Conclusion}
+
+After simplifying the circuit
+
+\[
+f = \overline{P+Q}
+\]
+
+Hence the correct answer is
+
+\textbf{Option (b)}
+
+\end{document}
+
