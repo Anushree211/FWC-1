@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{center}
+\Large \textbf{avr-gcc Question}
+
+\vspace{0.3cm}
+
+Anushree M R \\
+COMETFWC063
+\end{center}
+
+\section*{Question:11}
+
+Match the logic gates in Column A with their equivalents in Column B.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Column A & Column B \\
+\hline
+1. AND Gate & P. XOR Gate \\
+2. OR Gate & Q. XNOR Gate \\
+3. NOT Gate & R. NAND Gate \\
+\hline
+\end{tabular}
+\end{center}
+
+\section*{Solution}
+
+Using the truth table for the logic gates:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+A & B & AND & OR & XOR & XNOR & NAND \\
+\hline
+0 & 0 & 0 & 0 & 0 & 1 & 1 \\
+0 & 1 & 0 & 1 & 1 & 0 & 1 \\
+1 & 0 & 0 & 1 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 0 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+
+From logical equivalence:
+
+\[
+\text{AND} \equiv \text{NAND + NOT}
+\]
+
+\[
+\text{OR} \equiv \text{NAND combination}
+\]
+
+\[
+\text{NOT} \equiv \text{NAND with same inputs}
+\]
+
+Thus the correct matching is
+
+\begin{center}
+\textbf{P-2,\ Q-4,\ R-1,\ S-3}
+\end{center}
+
+\section*{Graph Output}
+
+\begin{center}
+\includegraphics[width=12cm]{graph.jpg}
+\end{center}
+
+\end{document}
