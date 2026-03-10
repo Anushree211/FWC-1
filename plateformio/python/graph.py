@@ -1,15 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Inputs
 A = np.array([0,0,1,1])
 B = np.array([0,1,0,1])
 
-# Outputs
 Q1 = A * (1-B)      # A B̅
 Q2 = (1-A) + B      # A̅ + B
 
-# Limit output to 0 or 1
 Q2 = np.clip(Q2,0,1)
 
 x = np.arange(4)
