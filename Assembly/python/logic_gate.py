@@ -1,28 +1,20 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Inputs
 A = np.array([0,0,1,1])
 B = np.array([0,1,0,1])
 
-# Outputs
 Qa = (A ^ B) & (1 - B)
 Qb = A & (1 - B)
 Qc = A
 Qd = (1 - A) | B
 
-# -----------------------------
-# Truth Table
-# -----------------------------
 print("A B | Qa Qb Qc Qd")
 print("------------------")
 
 for i in range(4):
     print(A[i], B[i], "|", Qa[i], Qb[i], Qc[i], Qd[i])
 
-# -----------------------------
-# Graph Plot
-# -----------------------------
 x = np.arange(4)
 
 plt.step(x, Qa, where='mid', label="Qa")
