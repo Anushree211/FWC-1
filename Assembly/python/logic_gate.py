@@ -1,11 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Inputs
 A = np.array([0,0,1,1])
 B = np.array([0,1,0,1])
 
-# Outputs
 Qa = (A ^ B) & (1 - B)
 Qb = A & (1 - B)
 Qc = A
