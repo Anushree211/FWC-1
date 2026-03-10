@@ -11,18 +11,12 @@ Qb = A & (1 - B)
 Qc = A
 Qd = (1 - A) | B
 
-# -----------------------------
-# Truth Table
-# -----------------------------
 print("A B | Qa Qb Qc Qd")
 print("------------------")
 
 for i in range(4):
     print(A[i], B[i], "|", Qa[i], Qb[i], Qc[i], Qd[i])
 
-# -----------------------------
-# Graph Plot
-# -----------------------------
 x = np.arange(4)
 
 plt.step(x, Qa, where='mid', label="Qa")
